@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
+        viewModel = ViewModelProvider(this,ViewModelFactory(10)).get(MainViewModel::class.java)
         datashow = findViewById(R.id.datashow)
         increment = findViewById(R.id.btnIncrement)
         decrement = findViewById(R.id.btnDecrement)

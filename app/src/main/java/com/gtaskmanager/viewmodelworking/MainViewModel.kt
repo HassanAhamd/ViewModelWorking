@@ -2,8 +2,8 @@ package com.gtaskmanager.viewmodelworking
 
 import androidx.lifecycle.ViewModel
 
-class MainViewModel: ViewModel() {
-    var counter: Int = 0
+class MainViewModel(val intialValue: Int): ViewModel() {
+    var counter: Int = intialValue
 
     fun increment(){
         counter++
